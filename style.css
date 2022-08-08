@@ -55,14 +55,6 @@ span {
   background-color: #000000;
 }
 
-.linear-gradient {
-  background-image: linear-gradient(
-    to right,
-    rgba(12, 201, 166, 0),
-    rgb(65, 55, 206)
-  );
-}
-
 .gradients {
   width: 100%;
   display: flex;
