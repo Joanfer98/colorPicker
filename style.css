@@ -1,0 +1,101 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ececec;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #161616;
+  color: aliceblue;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.input-style {
+  width: 50%;
+  margin: 10px;
+}
+
+.btn-style {
+  width: 70%;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #50ae39cd;
+  color: #0a0a0a;
+}
+
+.display-value-colors {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+span {
+  border: thin solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  color: rgb(64, 202, 188);
+}
+
+.content-style-color {
+  margin: 10px;
+  height: 100px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+.linear-gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(12, 201, 166, 0),
+    rgb(65, 55, 206)
+  );
+}
+
+.gradients {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* * DIMENSIONS: GALAXY FOLD */
+@media screen and (max-width: 280px) {
+  .gradients {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .display-value-colors {
+    flex-direction: column;
+  }
+
+  .display-value-colors span {
+    margin: 10px 0;
+  }
+}
+
+/* * DIMENSIONS: PC and TV */
+@media screen and (min-width: 280px) and (max-width: 1556px) {
+  body {
+    align-items: center;
+  }
+
+  .content {
+    width: 80%;
+    height: 700px;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(109, 99, 99, 0.19),
+      0 6px 6px rgba(101, 95, 95, 0.23);
+  }
+}

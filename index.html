@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Picker</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Color Picker</h1>
+        <div class="content-color">
+            <label for="color1">Color One</label>
+            <input class="input-style" type="color" name="color1" id="input-color" />
+            <label for="color1">Color Two</label>
+            <input class="input-style" type="color" name="color2" id="input-color2" />
+        </div>
+        <button class="btn-style" id="btn-visualize">Preview Color</button>
+        <div class="display-value-colors" id="display-value-color">
+            Color 1:<span id="colorOne">#000000</span>Color 2:
+            <span id="colorTwo">#000000</span>
+        </div>
+        <h2>Gradient's:</h2>
+        <div class="gradients">
+            <label for="linear-radio">Linear gradient</label>
+            <input type="radio" name="gradient" id="linear-radio" />
+            <label for="radial-radio"> Radial Gradient</label>
+            <input type="radio" name="gradient" id="radial-radio" />
+        </div>
+        <div id="content-value-color" class="content-style-color"></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
